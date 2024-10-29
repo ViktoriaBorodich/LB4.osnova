@@ -1,0 +1,103 @@
+body{font-family: Arial, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-image: url(фон.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;}
+  section {
+            margin: 20px;
+            padding: 20px;
+            border: 10px solid #F6EFBD; 
+            background-color: white}
+/* Универсальный селектор */
+* {
+    box-sizing: border-box;
+}
+
+/* Селекторы по тегу */
+h1 {
+    color: red; /* Красный */
+}
+
+h2:nth-of-type(1) {
+    color: orange; /* Оранжевый */
+}
+
+
+h4 {
+    color: purple; /* Фиолетовый */
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Селекторы по классу */
+.link {
+    color: green; /* Зеленый */
+}
+
+.special-link {
+    color: blue; /* Синий */
+}
+
+.nav-list li:nth-child(3) .link {
+    color: yellow; /* Желтый */
+}
+
+/* Селекторы по идентификатору */
+#first-post p {
+    color: orange; /* Оранжевый */
+}
+
+#second-post p {
+    color: purple; /* Фиолетовый */
+}
+
+/* Атрибутные селекторы */
+input[placeholder="Белый"] {
+    background-color: white;
+    color: black;
+}
+
+/* Псевдоклассы */
+nav a:hover {
+    color: green; /* Зеленый */
+}
+
+nav a:visited {
+    color: blue; /* Синий */
+}
+
+/* Псевдоэлементы */
+h1::after {
+    content: ' (Заголовок)';
+    font-size: 14px;
+    color: gray;
+}
+
+/* Селекторы потомков */
+.widget .color-list li:nth-child(1) {
+    color: gray; /* Серый */
+}
+
+.widget .color-list li:nth-child(2) {
+    color: brown; /* Коричневый */
+}
+
+.widget .color-list li.highlighted {
+    color: black; /* Черный */
+}
+
+/* Селекторы соседей */
+h3 + p.note {
+    color: maroon; /* Бордовый */
+}
+
+/* Дополнительные стили для кнопки */
+button.submit-btn {
+    color: black; /* Черный */
+}
